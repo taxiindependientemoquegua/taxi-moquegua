@@ -1,0 +1,8 @@
+services:
+  backend:
+    build: ./backend
+    ports: ["3000:3000"]
+    env_file: [.env]
+  admin:
+    build: ./admin-panel
+    ports: ["5173:5173"]
